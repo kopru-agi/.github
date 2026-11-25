@@ -1,0 +1,59 @@
+name: Görev
+description: Yapılacak bir iş (doküman, diyagram, wireframe, kod, ayar).
+title: "[Görev] "
+labels: ["tür: görev", "durum: triyaj"]
+body:
+  - type: textarea
+    id: amac
+    attributes:
+      label: Amaç
+      description: Bu iş neden yapılıyor? Hangi soruna veya gereksinime hizmet ediyor?
+    validations:
+      required: true
+  - type: textarea
+    id: kapsam
+    attributes:
+      label: Kapsam
+      description: Neler yapılacak? Neler bu işin dışında?
+      placeholder: |
+        Dahil:
+        - ...
+        Hariç:
+        - ...
+    validations:
+      required: true
+  - type: textarea
+    id: bitti
+    attributes:
+      label: Bitti tanımı
+      description: Bu iş ne zaman "bitti" sayılır? Ölçülebilir maddeler yazın.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: dropdown
+    id: alan
+    attributes:
+      label: Alan
+      options:
+        - Analiz / gereksinim
+        - Tasarım / UI-UX
+        - Veritabanı
+        - Backend
+        - Frontend
+        - DevOps / altyapı
+        - Hukuk / KVKK
+        - Tanıtım / iletişim
+    validations:
+      required: true
+  - type: dropdown
+    id: buyukluk
+    attributes:
+      label: Tahmini büyüklük
+      options:
+        - S (birkaç saat)
+        - M (1-2 gün)
+        - L (3-5 gün, bölünmeli mi?)
+    validations:
+      required: true

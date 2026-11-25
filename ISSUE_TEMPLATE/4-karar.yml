@@ -1,0 +1,38 @@
+name: Karar önerisi (ADR)
+description: Ekipçe verilmesi gereken bir teknik veya ürün kararı açın.
+title: "[Karar] "
+labels: ["tür: karar", "durum: triyaj"]
+body:
+  - type: textarea
+    id: baglam
+    attributes:
+      label: Bağlam
+      description: Hangi soru cevaplanmalı? Neden şimdi?
+    validations:
+      required: true
+  - type: textarea
+    id: secenekler
+    attributes:
+      label: Seçenekler
+      description: Her seçenek için artı ve eksileri yazın.
+      placeholder: |
+        A) ...
+           + ...
+           - ...
+        B) ...
+           + ...
+           - ...
+    validations:
+      required: true
+  - type: textarea
+    id: oneri
+    attributes:
+      label: Öneri
+      description: Hangi seçeneği neden öneriyorsunuz?
+    validations:
+      required: true
+  - type: textarea
+    id: kanit
+    attributes:
+      label: Kanıt / kaynak
+      description: Araştırma notu, doküman, link.

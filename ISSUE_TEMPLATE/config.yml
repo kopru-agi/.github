@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Güvenlik açığı veya veri sızıntısı
+    url: https://github.com/kopru-agi/.github/blob/main/SECURITY.md
+    about: Güvenlik sorunlarını herkese açık issue olarak açmayın. Bu rehberi izleyin.
