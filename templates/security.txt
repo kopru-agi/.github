@@ -1,0 +1,6 @@
+# Köprü web uygulaması yayına alınınca /.well-known/security.txt olarak sunulacak (RFC 9116).
+# Served at /.well-known/security.txt once the web app is deployed (RFC 9116).
+Contact: https://github.com/kopru-agi/docs/security/advisories/new
+Policy: https://github.com/kopru-agi/.github/blob/main/SECURITY.md
+Preferred-Languages: tr, en
+Expires: 2027-11-25T00:00:00.000Z
