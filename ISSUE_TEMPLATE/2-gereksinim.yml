@@ -1,0 +1,51 @@
+name: Gereksinim / özellik önerisi
+description: Sisteme yeni bir fonksiyonel veya fonksiyonel olmayan gereksinim önerin.
+title: "[Gereksinim] "
+labels: ["tür: gereksinim", "durum: triyaj"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        v1 kapsamı **yalnızca referanslı başvurudur**. Kapsam dışı fikirler `kapsam: v2+` etiketiyle saklanır, reddedilmez.
+  - type: dropdown
+    id: tur
+    attributes:
+      label: Gereksinim türü
+      options:
+        - Fonksiyonel (sistem ne yapmalı)
+        - Fonksiyonel olmayan (performans, güvenlik, KVKK, erişilebilirlik vb.)
+    validations:
+      required: true
+  - type: textarea
+    id: kullanici-hikayesi
+    attributes:
+      label: Kullanıcı hikâyesi
+      description: "Format: <aktör> olarak, <amaç> istiyorum, böylece <fayda>."
+      placeholder: "Referans olarak, ayda en fazla kaç talep alacağımı belirlemek istiyorum, böylece bunalmam."
+    validations:
+      required: true
+  - type: textarea
+    id: kabul
+    attributes:
+      label: Kabul kriterleri
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: dropdown
+    id: oncelik
+    attributes:
+      label: Öncelik (MoSCoW)
+      options:
+        - Must (olmazsa olmaz)
+        - Should (önemli)
+        - Could (olsa iyi olur)
+        - Won't (bu sürümde değil)
+    validations:
+      required: true
+  - type: textarea
+    id: kaynak
+    attributes:
+      label: Kaynak
+      description: Bu gereksinim nereden geldi? (hoca, ekip tartışması, araştırma notu, kullanıcı görüşmesi)

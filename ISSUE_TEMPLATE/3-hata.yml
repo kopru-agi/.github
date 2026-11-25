@@ -1,0 +1,37 @@
+name: Hata bildirimi
+description: Beklenmeyen bir davranış bildirin.
+title: "[Hata] "
+labels: ["tür: hata", "durum: triyaj"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ Güvenlik açığı veya kişisel veri sızıntısı ise burayı **kullanmayın**. SECURITY.md rehberini izleyin.
+        Ekran görüntülerinde gerçek kişisel veri olmamalıdır.
+  - type: textarea
+    id: ne-oldu
+    attributes:
+      label: Ne oldu?
+    validations:
+      required: true
+  - type: textarea
+    id: beklenen
+    attributes:
+      label: Ne bekliyordunuz?
+    validations:
+      required: true
+  - type: textarea
+    id: adimlar
+    attributes:
+      label: Tekrar üretme adımları
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: ortam
+    attributes:
+      label: Ortam
+      placeholder: "Tarayıcı, cihaz, sayfa adresi"
