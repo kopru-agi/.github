@@ -22,7 +22,7 @@ Yaş, cinsiyet, köken, inanç, engellilik durumu, deneyim düzeyi veya görüş
 
 ## Uygulama
 
-İhlalleri organizasyon yöneticilerine veya hocalarımıza bildirebilirsiniz. Bildirimler gizli tutulur. Yöneticiler uyarı, geçici veya kalıcı uzaklaştırma kararı verebilir.
+İhlalleri organizasyon yöneticilerine veya hocamıza bildirebilirsiniz. Bildirimler gizli tutulur. Yöneticiler uyarı, geçici veya kalıcı uzaklaştırma kararı verebilir.
 
 ---
 
