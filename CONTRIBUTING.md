@@ -60,7 +60,7 @@ AI araçları (Claude, Copilot, Cursor vb.) serbesttir. Ama:
 
 - Günlük koordinasyon: WhatsApp grubu.
 - Kalıcı her şey: GitHub (issue, PR, ADR).
-- Hocalarımıza soru: önce ekip içinde netleştirin, sonra tek ve toplu soru olarak iletin.
+- Hocamıza soru: önce ekip içinde netleştirin, sonra tek ve toplu soru olarak iletin.
 
 ## Davranış
 
